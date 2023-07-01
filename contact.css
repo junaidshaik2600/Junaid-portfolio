@@ -5,15 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
-.contact{
-    position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 .background-image{
     position: absolute;
     top: 0;
@@ -26,6 +18,17 @@
     opacity: 0.7; /*Adjust the opacity value to make the image more or less visible*/
     z-index: -1; /* Push the background image behind the content */
 }
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .contact-content{
     max-width: 800px;
     text-align: center;
@@ -132,6 +135,7 @@
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+    border-radius: 30px;
 }
 @media(max-width:991px){
     .contact{

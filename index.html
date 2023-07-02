@@ -32,7 +32,11 @@
         <section class="firstSection">
             <div class="leftSection">
                 Hi My name Is <span>S.MD.Junaid</span>
-                <div>And I am a <br><span>Web Developer</span></Web></div>
+                <div>And I am a 
+                  <br>
+                    <!-- <span>Web Developer</span> -->
+                </div>
+                <span id="element"></span>
             </div>
             <div class="rightSection">
                 <img src="img/bg image.png" alt="bg image">
@@ -40,5 +44,12 @@
         </section>
     </main>
     <footer></footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Java Developer', ' And ' ,'Web Developer'],
+        typeSpeed: 80,
+      });
+    </script>
   </body>
 </html>

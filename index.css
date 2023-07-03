@@ -46,7 +46,6 @@ nav ul li a:hover{
 }
 .leftSection {
   font-size: 2.5rem;
-  /* margin: 30px 0; */
 }
 .rightSection img {
   width: 80%;
@@ -66,19 +65,20 @@ main hr{
   border: 0;
   background: rgb(75, 75, 235);
   height: 1px;
-  margin: 23px 110px;
+  margin: 24px 110px;
 }
 .secondSection h1{
   font-size: 1.9rem;
+  margin: 5px 0;
 }
 .text-gray{
   color: gray;
 }
 .secondSection .box{
   background: white;
-  width: 80vw;
+  width: 75vw;
   height: 2px;
-  margin: 56px 0;
+  margin: 53px 0;
   display: flex;
 }
 .secondSection .vertical{
@@ -86,4 +86,31 @@ main hr{
   width: 1px;
   background: white;
   margin: 0 100px;
+}
+.image-top{
+  width: 25px;
+  position: relative;
+  top: -27px;
+  left: -11px;
+}
+.vartical-title{
+  position: relative;
+  top: 75px;
+  width: 150px;
+}
+.vartical-desc{
+  position: relative;
+  top: 86px;
+  color: gray;
+  width: 150px;
+  font-size: 9px;
+}
+footer{
+  background-color:#0e1e5a;
+  height: 215px;
+}
+.footer{
+  display: flex;
+  padding: 23px 122px;
+
 }

@@ -14,7 +14,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 45px;
-  background-color: rgb(34, 34, 56);
+  background-color:#0e1e5a;
+  /* background-color: rgb(34, 34, 56); */
 }
 nav ul {
   display: flex;
@@ -107,10 +108,34 @@ main hr{
 }
 footer{
   background-color:#0e1e5a;
-  height: 215px;
+  height: 135px;
 }
 .footer{
   display: flex;
   padding: 23px 122px;
-
+  justify-content: space-evenly;
+}
+.footer ul{
+  list-style: none;
+}
+.footer > div{
+  width: 223px;
+}
+.footer a{
+  text-decoration: none;
+  color: white;  /*rgb(34, 34, 56) */
+}
+.footer a:hover{
+  color: rgb(134, 134, 243);
+  font-size: 1.05rem;
+}
+.footer img {
+  width: 35px;
+  padding: 35px 1px;
+}
+.footer img{
+  padding: 8px 0px;
+}
+.footer-first h3{
+  padding: 20px 1px;
 }

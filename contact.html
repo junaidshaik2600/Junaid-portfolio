@@ -53,18 +53,19 @@
           </div>
         </div>
         <div class="contactForm">
-          <form onsubmit="sendEmail(); reset(); return false;">
+          <form action="https://formspree.io/f/xqkvkqdg"
+          method="POST">
             <h2>Send Message</h2>
             <div class="inputBox">
-              <input type="text" name="" required="" />
+              <input type="text" name="Name" required="" />
               <span>Full Name</span>
             </div>
             <div class="inputBox">
-                <input type="text" id="email" name="" required="" />
+                <input type="text" id="email" name="Email" required="" />
               <span>Email</span>
             </div>
             <div class="inputBox">
-              <textarea required="required"></textarea>
+              <textarea name="Message" required="required"></textarea>
               <span>Type your Message</span>
             </div>
             <div class="inputBox">

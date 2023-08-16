@@ -156,9 +156,32 @@ footer .footer-rights{
   text-align: center;
   color: gray;
   /* background-color: rgb(0, 0, 33); */
-  padding: 9px 0;
+  padding: 9px 0px;
 }
-@media screen and (max-width: 1280px) {
+/* Add these styles to override default anchor styles */
+.buttons .btn {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Reset text color */
+  background-color: rgb(71, 71, 247, 27%);
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 12px;
+  display: inline-block;
+}
+
+/* Keep the existing hover styles for the buttons */
+.buttons .btn:hover {
+  background-color: rgb(54, 54, 210); /*rgb(134, 134, 243); */
+}
+
+/* Rest of your existing CSS styles */
+/* ... */
+
+
+
+@media screen and (max-width: 768px) {
   .secondSection .box {
     width: 50vw;
   }

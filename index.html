@@ -19,18 +19,24 @@
   <body>
     <header>
       <nav>
-        <div class="left">Junaid's Portfolio</div>
-        <div class="right">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="contact.html" target="_blank">Contact Me</a></li>
-          </ul>
+        <div class="left">Junaid's Portfolio
+        </div>
+        <div class="right" id="right">
+          <div id="menu" class="menu-button" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+          <ul class="nav" id="nav">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Projects</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="contact.html" target="_blank">Contact Me</a></li>
+           </ul>
         </div>
       </nav>
-    </header>
+    </header>  
     <main>
       <section class="firstSection">
         <div class="leftSection">
@@ -42,8 +48,6 @@
           </div>
           <span id="element"></span>
           <div class="buttons">
-            <!-- <button class="btn">Download Resume</button>
-            <button class="btn">Visit Github</button> -->
             <a href="/doc/resume.pdf" class="btn" download>Download Resume</a>
             <a href="https://github.com/junaidshaik2600" class="btn" target="_blank">Visit GitHub</a>
           </div>
@@ -146,5 +150,6 @@
         typeSpeed: 80,
       });
     </script>
+    <script src="index.js"></script>
   </body>
 </html>

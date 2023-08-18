@@ -5,17 +5,14 @@
 body {
   background-color: rgb(0, 0, 33);
   color: white;
-  font-family: "Kanit", sans-serif;
-  font-family: "Poppins", sans-serif;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Kanit", "Poppins", "Work Sans", sans-serif;
 }
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 45px;
-  background-color:#0e1e5a;
-  /* background-color: rgb(34, 34, 56); */
+  background-color: #0e1e5a;
 }
 nav ul {
   display: flex;
@@ -29,7 +26,7 @@ nav ul li a {
   text-decoration: none;
   color: white;
 }
-nav ul li a:hover{
+nav ul li a:hover {
   color: rgb(134, 134, 243);
   font-size: 1.05rem;
 }
@@ -48,7 +45,7 @@ nav ul li a:hover{
 .leftSection {
   font-size: 2.5rem;
 }
-.leftSection .buttons{
+.leftSection .buttons {
   padding: 23px 0;
 }
 .leftSection .btn {
@@ -67,78 +64,78 @@ nav ul li a:hover{
 span {
   color: rgb(75, 75, 235);
 }
-#element{
-  color:rgb(75, 75, 235);
+#element {
+  color: rgb(75, 75, 235);
 }
-.secondSection{
+.secondSection {
   max-width: 80vw;
   margin: auto;
   height: 80vh;
 }
-main hr{
+main hr {
   border: 0;
   background: rgb(75, 75, 235);
   height: 1px;
   margin: 24px 110px;
 }
-.secondSection h1{
+.secondSection h1 {
   font-size: 1.9rem;
   margin: 5px 0;
 }
-.text-gray{
+.text-gray {
   color: gray;
 }
-.secondSection .box{
+.secondSection .box {
   background: white;
   width: 75vw;
   height: 2px;
   margin: 53px 0;
   display: flex;
 }
-.secondSection .vertical{
+.secondSection .vertical {
   height: 93px;
   width: 1px;
   background: white;
   margin: 0 6vw;
 }
-.image-top{
+.image-top {
   width: 25px;
   position: relative;
   top: -27px;
   left: -11px;
 }
-.vartical-title{
+.vartical-title {
   position: relative;
   top: 75px;
   width: 150px;
 }
-.vartical-desc{
+.vartical-desc {
   position: relative;
   top: 86px;
   color: gray;
   width: 150px;
   font-size: 9px;
 }
-footer{
-  background-color:#0e1e5a;
+footer {
+  background-color: #0e1e5a;
   /* height: 135px; */
 }
-.footer{
+.footer {
   display: flex;
   padding: 23px 122px;
   justify-content: space-evenly;
 }
-.footer ul{
+.footer ul {
   list-style: none;
 }
-.footer > div{
+.footer > div {
   width: 223px;
 }
-.footer a{
+.footer a {
   text-decoration: none;
-  color: white;  /*rgb(34, 34, 56) */
+  color: white; /*rgb(34, 34, 56) */
 }
-.footer a:hover{
+.footer a:hover {
   color: rgb(134, 134, 243);
   font-size: 1.05rem;
 }
@@ -146,16 +143,16 @@ footer{
   width: 35px;
   padding: 35px 1px;
 }
-.footer img{
+.footer img {
   padding: 26px 0px;
 }
-.footer-first h3{
+.footer-first h3 {
   padding: 20px 1px;
 }
-footer .footer-rights{
+footer .footer-rights {
   text-align: center;
   color: gray;
-  /* background-color: rgb(0, 0, 33); */
+  background-color: rgb(0, 0, 33);
   padding: 9px 0px;
 }
 /* Add these styles to override default anchor styles */
@@ -176,19 +173,15 @@ footer .footer-rights{
   background-color: rgb(54, 54, 210); /*rgb(134, 134, 243); */
 }
 
-/* Rest of your existing CSS styles */
-/* ... */
-
-
-
 @media screen and (max-width: 768px) {
   .secondSection .box {
-    width: 50vw;
+    width: 80vw;
   }
-  .box{
-  flex-direction: column;
+  .box {
+    flex-direction: column;
   }
-.vartical-title, .vartical-desc{
+  .vartical-title,
+  .vartical-desc {
     left: 45px;
   }
   .secondSection .vertical {
@@ -197,37 +190,191 @@ footer .footer-rights{
   .firstSection {
     flex-direction: column-reverse;
   }
-  nav{
-    flex-direction: column;
-  }
-  .leftSection{
+
+  /* Adjust the layout of the left section */
+  .leftSection {
     width: 100% !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .rightSection{
-    width: 721px !important;
+
+  /* Adjust the layout of the right section */
+  .rightSection {
+    width: 100% !important;
     display: flex;
     justify-content: center;
   }
-  .rightSection img{
-    width: 35vw;
-    /* margin: 100px 0; */
-    margin-bottom: 75px;
+
+  .rightSection img {
+    width: 80%;
+    margin-bottom: 50px;
   }
-  .image-top{
-    top: 122px;
+
+  .image-top {
+    top: 90px;
   }
-  .secondSection{
+
+  .secondSection {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 141vh;
+    padding: 20px 0;
   }
 
-  body{
-    min-width: fit-content;
+  /* Adjust the body's minimum width */
+  body {
+    min-width: auto;
+  }
+  /* Hide the unnecessary footer sections */
+  .footer-third,
+  .footer-fourth {
+    display: none;
+  }
+
+  /* Adjust the layout of the footer */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0; /* Add some padding for spacing */
+  }
+
+  /* Style the logo and footer title together */
+  .footer > a,
+  .footer-first h3 {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px; /* You can adjust the font size */
+  }
+
+  /* Style the logo image */
+  .footer > a img {
+    width: 30px; /* You can adjust the image size */
+    margin-right: 10px; /* Add some spacing between the image and text */
+  }
+
+  /* Style the footer navigation links */
+  .footer-second ul,
+  .footer-second ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-second ul li {
+    margin: 0 10px; /* Add spacing between the navigation links */
+  }
+
+  .footer-rights {
+    text-align: center;
+    color: gray;
+    padding: 10px 0; /* Adjust the padding for spacing */
+  }
+  /* Adjust the layout of the footer */
+  .footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-between; /* Use space-between to evenly distribute items */
+  }
+
+  /* Adjust the layout of the footer's div elements */
+  .footer > div {
+    width: auto; /* Allow content to determine the width */
+  }
+
+  /* Style the footer's h3 element */
+  .footer-first h3 {
+    padding: 20px 0; /* Adjust padding as needed */
+    white-space: nowrap; /* Keep the h3 content in a single line */
+  }
+
+  main {
+    margin-bottom: 100%; /* Increase or decrease this value as needed */
+  }
+  /* For three dot nav bar */
+  .right {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    z-index: 2; /* Ensure the menu icon is above other elements */
+  }
+  #menu {
+    width: 18px;
+    height: 30px;
+    margin: 10px 0 20px 115px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  #bar1 {
+    transform: translateY(-6px);
+  }
+  #bar2 {
+    transform: translateY(-4px);
+  }
+  #bar3 {
+    transform: translateY(-2px);
+  }
+  .right ul {
+    padding: 0;
+    display: block;
+    margin: -33px 0;
+  }
+  .right ul li {
+    margin: 15px; /* Add top and bottom margin to create spacing between list items */
+  }
+  .nav li {
+    padding: 0;
+    margin: 0 20px;
+    transition: 1s ease;
+    display: none;
+  }
+  .nav.icon li {
+    display: block;
+  }
+  .icon .bar {
+    background-color: #fff;
+  }
+  .icon #bar1 {
+    transform: translateY(4px) rotate(45deg);
+  }
+  .icon #bar2 {
+    opacity: 0;
+  }
+  .icon #bar3 {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 69.5px;
+    left: 83%;
+    transform: translateX(-50%);
+    background-color: #0e1e5a;
+    border-radius: 25px 0px 0px 25px;
+    padding: 10px;
+    z-index: 1;
+  }
+
+  /* Set background color based on menu state */
+  .nav:not(.icon) {
+    background-color: transparent; /* When the menu is closed */
+  }
+  .nav.icon {
+    background-color: #0e1e5a; /* When the menu is open */
+    width: 100%; /*Set the width only when the menu is open */
   }
 }

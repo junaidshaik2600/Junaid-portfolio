@@ -4,152 +4,142 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:wght@700&family=Work+Sans:wght@200;400&display=swap"
       rel="stylesheet"
     />
-
-     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
     
     <link rel="icon" href="img/logo.gif" type="image/icon type" />
     <title>Junaid - Portfolio</title>
   </head>
-  <body>
-    <header>
-      <nav>
-        <div class="left">Junaid's Portfolio
-        </div>
-        <div class="right" id="right">
-          <div id="menu" class="menu-button" onclick="onClickMenu()">
-            <div id="bar1" class="bar"></div>
-            <div id="bar2" class="bar"></div>
-            <div id="bar3" class="bar"></div>
-          </div>
-          <ul class="nav" id="nav">
-              <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="contact.html" target="_blank">Contact Me</a></li>
-           </ul>
-        </div>
-      </nav>
-    </header>  
-    <main>
-      <section class="firstSection">
-        <div class="leftSection">
-          <div>Hi My name Is </div>
-          <div><span>S.MD.Junaid</span>
-            <div>And I am a</div>
-            <!-- <br /> -->
-            <!-- <span>Web Developer</span> -->
-          </div>
-          <span id="element"></span>
-          <div class="buttons">
-            <a href="/doc/resume.pdf" class="btn" download>Download Resume</a>
-            <a href="https://github.com/junaidshaik2600" class="btn" target="_blank">Visit GitHub</a>
-          </div>
-        </div>
-        <div class="rightSection">
-          <img src="img/bg image.png" alt="bg image" />
-        </div>
-      </section>
-      <hr />
-      <section class="secondSection">
-        <span class="text-gray"> I Am A Student & I Learned Things</span>
-        <h1>Work Experience</h1>
-
-        <div class="box">
-            <div class="vertical">
-              <img class="image-top" src="img/c.png" alt="c logo" />
-              <div class="vartical-title">C Developer<br />(2021)</div>
-              <div class="vartical-desc">
-                I Have Learn Basic Level Of Programming In Programming C
-              </div>
+    <body>
+        <header>
+            <nav>
+                <div class="left">Junaid's Portfolio</div> 
+                <div class="right" id="right">
+                    <div id="menu" class="menu-button" onclick="onClickMenu()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                    <ul class="nav" id="nav">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="contact.html" target="_blank">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="firstSection">
+                <div class="leftSection">
+                    <div>Hi My name Is </div>
+                    <div><span>S.MD.Junaid</span>
+                        <div>And I am a</div>
+                    </div>
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <a href="/doc/resume.pdf" class="btn" download>Download Resume</a>
+                        <a href="https://github.com/junaidshaik2600" class="btn" target="_blank">Visit GitHub</a>
+                    </div>
+                </div>
+                <div class="rightSection">
+                  <!-- <img src="img/bg image.png" alt="bg image" /> -->
+                </div>
+            </section>
+            <hr />
+            <section class="secondSection">
+                <span class="text-gray"> I Am A Student & I Learned Things</span>
+                <hr class="work">
+                <div class="grid-container">
+                    <div class="bg-grid" >
+                        <!-- <button class="btn-scroll btn-scroll-left"id="left-btn">
+                            <i class="fa-solid fa-chevron-left" onclick="scrollhorizontally(1)"></i>
+                        </button> -->
+                        <div class="grid" id="grid">
+                            <div class="boxs">
+                                <img src="img/c.png" alt="c programming logo"class="img">
+                                <div class="title">C Developer<br/>(2021)</div>
+                                <div class="disc">
+                                    I Have Learn Basic Level Of Programming In Programming C
+                                </div>
+                            </div> 
+                            <div class="boxs">
+                                <img src="img/ds.png" alt="DS logo"class="img">
+                                <div class="title">Data Structures<br/>(2021-2022)</div>
+                                <div class="disc">
+                                    I have a deep-rooted understanding of fundamental Java programming concepts
+                                </div>
+                            </div>
+                            <div class="boxs">  
+                                <img src="img/java.png" alt="Java logo"class="img">
+                                <div class="title">Java Developer<br/>(2022-2023)</div>
+                                <div class="disc">
+                                    I have a deep-rooted understanding of fundamental Java programming concepts.
+                                </div>
+                            </div>
+                            <div class="boxs">  
+                                <img src="img/html.png" alt="HTML logo"class="img">
+                                <div class="title">HTML Developer<br/>(2022-Now)</div>
+                                <div class="disc">
+                                    I demonstrate a strong foundation in HTML and HTML5 while actively pursuing continuous learning
+                                </div>
+                            </div>
+                            <div class="boxs">
+                                <img src="img/css.png" alt="CSS logo"class="img">
+                                <div class="title">CSS Developer<br />(2022-Now)</div>
+                                <div class="disc">
+                                    I demonstrate a foundation in CSS and CSS3 while actively pursuing continuous learning
+                                </div>
+                            </div>
+                        </div>
+                        <!-- IF WANT TO ADD MOVE BOXS CHECK IN .grid (NO.OF BOXS,1fr) -->
+                        <!-- <buton class="btn-scroll btn-scroll-right" id="right-btn">
+                            <i class="fa-solid fa-chevron-right" onclick="scrollhorizontally(-1)"></i>
+                        </buton>-->
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <a href="#">
+                <img src="img/logo.gif" alt="My logo"></a>
+                <div class="footer-first">
+                    <h3>Junaid's Developer Portfolio</h3>
+                </div>
+                <div class="footer-second">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Servies</a></li>
+                        <li><a href="">Contact</a> </li>
+                    </ul>
+                </div>
+                <div class="footer-third">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Servies</a></li>
+                        <li><a href="">Contact</a> </li>
+                    </ul>
+                </div>
+                <div class="footer-fourth">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Servies</a></li>
+                        <li><a href="">Contact</a> </li>
+                    </ul>
+                </div>
             </div>
-            <div class="vertical">
-              <img
-                class="image-top"
-                src="img/ds.png"
-                alt="Data Structures Image"
-              />
-              <div class="vartical-title">Data Structures<br />(2021-2022)</div>
-              <div class="vartical-desc">
-                You have a solid grasp of fundamental data structures.
-              </div>
-            </div>
-            <div class="vertical">
-              <img class="image-top" src="img/java.png" alt="Java logo" />
-              <div class="vartical-title">Java Developer<br />(2022-2023)</div>
-              <div class="vartical-desc">
-                I have a deep-rooted understanding of fundamental Java
-                programming concepts.
-              </div>
-            </div>
-            <div class="vertical">
-              <img class="image-top" src="img/html.png" alt="HTML logo" />
-              <div class="vartical-title">HTML Developer<br />(2022-Now)</div>
-              <div class="vartical-desc">
-                I demonstrate a strong foundation in HTML and HTML5 while
-                actively pursuing continuous learning
-              </div>
-            </div>
-            <div class="vertical">
-              <img class="image-top" src="img/css.png" alt="css logo" />
-              <div class="vartical-title">CSS Developer<br />(2022-Now)</div>
-              <div class="vartical-desc">
-                I demonstrate a foundation in CSS and CSS3 while actively
-                pursuing continuous learning
-              </div>
-            </div>
-          </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer">
-        <a href="#">
-        <img src="img/logo.gif" alt="My logo"></a>
-        <div class="footer-first">
-          <h3>Junaid's Developer Portfolio</h3>
-        </div>
-        <div class="footer-second">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Servies</a></li>
-            <li><a href="">Contact</a> </li>
-          </ul>
-        </div>
-        <div class="footer-third">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Servies</a></li>
-            <li><a href="">Contact</a> </li>
-          </ul>
-        </div>
-        <div class="footer-fourth">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Servies</a></li>
-            <li><a href="">Contact</a> </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-rights">
-        Copyright &#169; www.doimain-name.com | &#174; All rights reserved	
-      </div> 
-    </footer>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: ["Java Developer", " And ", "Web Developer"],
-        typeSpeed: 80,
-      });
-    </script>
-    <script src="index.js"></script>
-  </body>
+            <div class="footer-rights">
+              Copyright &#169; www.doimain-name.com | &#174; All rights reserved	
+            </div> 
+        </footer>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script src="index.js"></script>
+    </body>
 </html>

@@ -141,7 +141,8 @@ nav ul li a:hover {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100%;
+    margin: 10px;
+    padding: 0px;
     /* color: rgb(218, 138, 138); */
     /* color:hsl(31, 27%, 70%); */
     color: rgb(127, 208, 219);

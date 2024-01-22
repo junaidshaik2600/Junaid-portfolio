@@ -135,9 +135,19 @@ nav ul li a:hover {
   }
 }
 @media screen and (max-width: 610px) {
+  body{
+    background-image: url("../img/phone-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 10px;
+    padding: 0px;
+    color: rgb(127, 208, 219);
+  }
   /* Header 
-       And Nav Media Query Which Copyed From index.css
-      */
+     And Nav Media Query Which Copyed From index.css
+  */
   .right {
     position: absolute;
     top: 18px;

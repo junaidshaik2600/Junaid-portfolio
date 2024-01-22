@@ -88,7 +88,7 @@ nav ul li a:hover {
 
 @media screen and (max-width: 645px) {
   body {
-    background-image: url("/img/phone-bg1.jpg");
+    background-image: url("../img/phone-bg1.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

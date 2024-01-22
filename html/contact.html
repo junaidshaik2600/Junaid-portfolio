@@ -5,17 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/contact.css" />
     <link rel="icon" href="../img/logo.gif" type="image/icon type" />
-    <script src="https://kit.fontawesome.com/c2b3fc5030.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c2b3fc5030.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Contact Me</title>
   </head>
   <body>
+    <div class="background-image"></div>
+    <header>
+      <nav>
+        <div class="left">Junaid's Portfolio</div>
+        <div class="right" id="right">
+          <div id="menu" class="menu-button" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+          <ul class="nav" id="nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="../html/projects.html">Projects</a></li>
+            <li><a href="../html/team.html">Team</a></li>
+            <li><a href="#" target="_blank">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <section class="contact">
-      <div class="background-image"></div>
       <div class="content">
         <h2>Contact Me</h2>
         <p>
           Welcome to my portfolio! I'm an enthusiastic individual eager to learn
-          and grow in [ Web Development ] . Let's connect and explore
+          and grow in Web Development. Let's connect and explore
           opportunities together.
         </p>
       </div>
@@ -53,15 +75,14 @@
           </div>
         </div>
         <div class="contactForm">
-          <form action="https://formspree.io/f/xqkvkqdg"
-          method="POST">
+          <form action="https://formspree.io/f/xqkvkqdg" method="POST">
             <h2>Send Message</h2>
             <div class="inputBox">
               <input type="text" name="Name" required="" />
               <span>Full Name</span>
             </div>
             <div class="inputBox">
-                <input type="text" id="email" name="Email" required="" />
+              <input type="text" id="email" name="Email" required="" />
               <span>Email</span>
             </div>
             <div class="inputBox">
@@ -75,5 +96,44 @@
         </div>
       </div>
     </section>
+    <script>
+      // Get references to the menu icon and navigation element
+      const menuIcon = document.getElementById("menu");
+      const navList = document.getElementById("nav");
+
+      // Function to toggle the navigation menu when the menu icon is clicked
+      function onClickMenu() {
+        menuIcon.classList.toggle("icon");
+        navList.classList.toggle("icon");
+      }
+
+      // Function to close the navigation menu
+      function closeNavMenu() {
+        menuIcon.classList.remove("icon");
+        navList.classList.remove("icon");
+      }
+
+      // Event listener for clicks on the document
+      document.addEventListener("click", function (event) {
+        // Check if the clicked element is outside the navigation area
+        if (
+          !menuIcon.contains(event.target) &&
+          !navList.contains(event.target)
+        ) {
+          closeNavMenu(); // Close the navigation menu
+        }
+      });
+
+      // Event listener for scrolls on the document
+      document.addEventListener("scroll", function (event) {
+        // Check if the scroll occurred outside the navigation area
+        if (
+          !menuIcon.contains(event.target) &&
+          !navList.contains(event.target)
+        ) {
+          closeNavMenu(); // Close the navigation menu
+        }
+      });
+    </script>
   </body>
 </html>

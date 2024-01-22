@@ -1,16 +1,17 @@
+// typed script
+var typed = new Typed("#element", {
+  strings: ["Java Developer", " And ", "Web Developer"],
+  typeSpeed: 80,
+});
+
 // for nav menu
 function onClickMenu() {
-    const menuIcon = document.getElementById("menu");
-    const navList = document.getElementById("nav");
+  const menuIcon = document.getElementById("menu");
+  const navList = document.getElementById("nav");
   
-    menuIcon.classList.toggle("icon");
-    navList.classList.toggle("icon");
-  }
-// typed script
-  var typed = new Typed("#element", {
-    strings: ["Java Developer", " And ", "Web Developer"],
-    typeSpeed: 80,
-  });
+  menuIcon.classList.toggle("icon");
+  navList.classList.toggle("icon");
+}
 
 // Get references to the menu icon and navigation element
 const menuIcon = document.getElementById("menu");
@@ -43,3 +44,25 @@ function onClickMenu() {
   menuIcon.classList.toggle("icon");
   navList.classList.toggle("icon");
 }
+
+
+// Slide buttons action
+document.addEventListener('DOMContentLoaded', function () {
+  // Slide buttons action
+  const slideBox = document.querySelector('.grid');
+  const slideLeftButton = document.getElementById('left-btn');
+  const slideRightButton = document.getElementById('right-btn');
+
+  let currentPosition = 0;
+
+  slideLeftButton.addEventListener('click', () => {
+    currentPosition -= 100; // Adjust this value based on how far you want to slide
+    slideBox.style.left = currentPosition + 'px';
+  });
+
+  slideRightButton.addEventListener('click', () => {
+    currentPosition += 100; // Adjust this value based on how far you want to slide
+    slideBox.style.left = currentPosition + 'px';
+  });
+
+});

@@ -305,7 +305,7 @@ footer .footer-rights {
   .right {
     position: absolute;
     top: 10px;
-    right: 15%;
+    right: 20%;
     z-index: 2; /* Ensure the menu icon is above other elements */
   }
   #menu {

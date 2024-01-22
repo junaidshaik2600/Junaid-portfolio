@@ -137,7 +137,11 @@ nav ul li a:hover {
 @media screen and (max-width: 610px) {
   body{
     background-image: url("/img/phone-bg.jpg");
-    background-size: 80%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 10px;
   }
   /* Header 
      And Nav Media Query Which Copyed From index.css

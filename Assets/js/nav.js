@@ -1,17 +1,17 @@
-const nav = document.querySelector(".right");
 const navHtml = `
     <div id="menu" class="menu-button" onclick="onClickMenu()">
-    <div id="bar1" class="bar"></div>
-    <div id="bar2" class="bar"></div>
-    <div id="bar3" class="bar"></div>
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
     </div>
     <ul class="nav" id="nav">
-    <li><a href="junaid-portfolio/index.html">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="junaid-portfolio/pages/projects.html">Projects</a></li>
-    <li><a href="pages/team.html">Team</a></li>
-    <li><a href="junaid-portfolio/pages/contact.html">Contact Me</a></li>
+        <li><a href="/junaid-portfolio/index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="/junaid-portfolio/pages/projects.html">Projects</a></li>
+        <li><a href="/junaid-portfolio/pages/team.html">Team</a></li>
+        <li><a href="/junaid-portfolio/pages/contact.html">Contact Me</a></li>
     </ul>`;
+
 if (nav) {
   nav.innerHTML = navHtml;
 }

@@ -1,0 +1,43 @@
+[
+    {
+        "imgSrc":"./Assets/img/javaScript.png",
+        "imgAlt":"JavaScript logo",
+        "title":"JavaScript Developer",
+        "time":" 2023-24 ",
+        "disc":"I have a strong foundation in JavaScript and am continuously enhancing my skills."
+    },
+    {
+        "imgSrc":"./Assets/img/css.png",
+        "imgAlt":"CSS logo",
+        "title":"CSS Developer",
+        "time":" 2022-23 ",
+        "disc":"I have a solid foundation in CSS and CSS3 and am continuously building on my skills."
+    },
+    {
+        "imgSrc":"./Assets/img/html.png",
+        "imgAlt":"HTML logo",
+        "title":"HTML Developer",
+        "time":" 2022-23 ",
+        "disc":"I have a strong understanding of HTML and HTML5 and am always open to further learning."
+    },
+    {
+        "imgSrc":"./Assets/img/java.png",
+        "imgAlt":"Java logo",
+        "title":"Java Developer",
+        "time":" 2022 ",
+        "disc":"I have a deep-rooted understanding of fundamental Java programming concepts."
+    },
+    {
+        "imgSrc":"./Assets/img/ds.png",
+        "imgAlt":"DS logo",
+        "title":"Data Structures",
+        "time":" 2021-22 ",
+        "disc":"I have a deep-rooted understanding of fundamental Java programming concepts"
+    },{
+        "imgSrc":"./Assets/img/c.png",
+        "imgAlt":"c programming logo",
+        "title":"C Developer",
+        "time":" 2021 ",
+        "disc":"I Have Learn Basic Level Of Programming In Programming C"
+    }
+]

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/css/nav.css">
+    <link rel="stylesheet" href="./Assets/css/index.css" />
+    <link rel="icon" href="./Assets/img/logo.gif" type="image/icon type" />
+    <title>Junaid - Portfolio</title>
+  </head>
+    <body>
+        <header>
+            <nav>
+                <div class="left">Junaid's Portfolio</div> 
+                <div class="right" id="right"></div>
+            </nav>
+        </header>
+        <main>
+            <section class="firstSection">
+                <div class="leftSection">
+                    <div>Hi My name Is </div>
+                    <div><span>S.MD.Junaid</span>
+                        <div>And I am a</div>
+                    </div>
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <a href="doc/Resume.pdf" class="btn" download>Download Resume</a>
+                        <a href="https://github.com/junaidshaik2600" class="btn" target="_blank">Visit GitHub</a>
+                    </div>
+                </div>
+                <div class="rightSection">
+                  <!-- <img src="img/bg image.png" alt="bg image" /> -->
+                </div>
+            </section>
+            <hr />
+            <section class="secondSection">
+                <span class="text-gray"> I Am A Student & I Learned Things</span>
+                <hr class="work">
+                <div class="grid-container">
+                    <div class="bg-grid" >
+                        <div class="grid" id="grid"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <a href="#">
+                <img src="./Assets/img/logo.gif" alt="My logo"></a>
+                <div class="footer-first">
+                    <h3>Junaid's Developer Portfolio</h3>
+                </div>
+                <div class="footer-second">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Servies</a></li>
+                        <li><a href="">Contact</a> </li>
+                    </ul>
+                </div>
+                <div class="footer-third">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Servies</a></li>
+                        <li><a href="">Contact</a> </li>
+                    </ul>
+                </div>
+                <div class="footer-fourth">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Servies</a></li>
+                        <li><a href="">Contact</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-rights">
+              Copyright &#169; www.doimain-name.com | &#174; All rights reserved	
+            </div> 
+        </footer>
+        <script src="./Assets/js/nav.js"></script>
+        <script src="./Assets/js/index.js"></script>
+    </body>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            // typed script
+            let typed = new Typed("#element", {
+                strings: ["Java Developer", " And ", "Web Developer"],
+                typeSpeed: 180,
+            });
+            console.log("working")
+        </script>
+</html>

@@ -1,0 +1,17 @@
+[
+    {
+        "imgSrc":"/Assets/img/drumProject.png",
+        "titleText":"Interactive Drum Kit Application",
+        "link":"https://junaidshaik2600.github.io/Drum-Kit-Project/"
+    },
+    {
+        "imgSrc":"/Assets/img/randomQuoteGenerator.png",
+        "titleText":"Random Quote Generator",
+        "link":"https://junaidshaik2600.github.io/randomQuoteGenerator/"
+    },
+    {
+        "imgSrc":"/Assets/img/interactiveMemoryGame.png",
+        "titleText":"Interactive Memory Game",
+        "link":"https://junaidshaik2600.github.io/memory-game-color-sequence/"
+    }
+]

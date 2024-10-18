@@ -1,0 +1,230 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+body{
+  color: rgb(0, 0, 0);
+  font-family: "kanit","Poppins", sans-serif;
+}
+.allProjects {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(150px, 1fr)
+  ); /* Adjust column width as needed */
+  gap: 10px;
+}
+.project {
+  background-color: rgba(114, 219, 189, 0.92);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  overflow: hidden;
+
+  width: 100%; /* Full width on smaller screens */
+  margin: 5px; /* Adjust margin as needed */
+  padding: 10px; /* Adjust padding as needed */
+  gap: 10px; /*Adjust gap as needed */
+  opacity: 85%;
+  border-radius: 10%;
+
+}
+
+
+.imgLogo {
+  width: 100%; /* Full width on smaller screens */
+  height: auto; /* Adjust height as needed */
+  border: 5px solid; /* rgb(127, 208, 219); /* Set the border width and color as needed */
+  border-radius: 55%;
+}
+
+h3 {
+  overflow: hidden; /* Prevents text from overflowing */
+  text-overflow: ellipsis; /* Display an ellipsis (...) to indicate truncated text */
+  white-space: nowrap; /* Prevents wrapping onto multiple lines */
+  margin-bottom: 5px; /* Add margin to separate title from other content */
+}
+.link {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+
+
+/* Nav css here Copyed From index.css  */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 45px;
+  background-color: rgb(15, 15, 17); /* #0e1e5a; */
+  border-radius: 25px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 18px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: rgb(127, 208, 219);
+  font-size: 1.05rem;
+}
+.left {
+  color: white;
+  font-size: 1rem;
+  cursor: default;
+}
+
+@media screen and (max-width: 645px) {
+  body {
+    background-image: url("../img/phone-bg1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 10px;
+    padding: 0px;
+    /* color: rgb(218, 138, 138); */
+    /* color:hsl(31, 27%, 70%); */
+    color: rgb(127, 208, 219);
+  }
+
+  .link {
+    /* color:hsl(31, 27%, 70%); */
+    color: rgb(127, 208, 219);
+  }
+  .project:hover {
+    background-color: rgb(81, 169, 217);
+    .title {
+      color: #000;
+    }
+    .link {
+      color: #000;
+    }
+    .imgLogo {
+      border: 5px solid rgb(0, 0, 0);
+    }
+  }
+  .project {
+    background-color: rgba(0, 0, 0, 0.923);
+    height: auto; /* Adjust height as needed */
+    width: 100%; /* Full width on smaller screens */
+    margin: 5px; /* Adjust margin as needed */
+    padding: 10px; /* Adjust padding as needed */
+    gap: 10px; /*Adjust gap as needed */
+    opacity: 85%;
+    border-radius: 10%;
+  }
+
+  .imgLogo {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Adjust height as needed */
+    border: 5px solid; /* rgb(127, 208, 219); /* Set the border width and color as needed */
+    border-radius: 55%;
+  }
+}
+@media screen and (max-width: 610px) {
+  body{
+    background-image: url("../img/phone-bg1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 10px;
+    padding: 0px;
+    color: rgb(127, 208, 219);
+  }
+  /* Header 
+     And Nav Media Query Which Copyed From index.css
+  */
+  .right {
+    position: absolute;
+    top: 18px;
+    right: 10%;
+    z-index: 2; /* Ensure the menu icon is above other elements */
+  }
+  #menu {
+    width: 18px;
+    height: 30px;
+    margin: 10px 0 20px 115px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  #bar1 {
+    transform: translateY(-6px);
+  }
+  #bar2 {
+    transform: translateY(-4px);
+  }
+  #bar3 {
+    transform: translateY(-2px);
+  }
+  .right ul {
+    padding: 0;
+    display: block;
+    margin: -33px 0;
+  }
+  .right ul li {
+    margin: 15px; /* Add top and bottom margin to create spacing between list items */
+  }
+  .nav li {
+    padding: 0;
+    margin: 0 20px;
+    transition: 1s ease;
+    display: none;
+  }
+  .nav.icon li {
+    display: block;
+  }
+  .icon .bar {
+    background-color: #fff;
+  }
+  .icon #bar1 {
+    transform: translateY(4px) rotate(45deg);
+  }
+  .icon #bar2 {
+    opacity: 0;
+  }
+  .icon #bar3 {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 69.5px;
+    left: 83%;
+    transform: translateX(-50%);
+    background-color: #0e1e5a;
+    border-radius: 25px 0px 0px 25px;
+    padding: 10px;
+    z-index: 1;
+  }
+
+  /* Set background color based on menu state */
+  .nav:not(.icon) {
+    background-color: transparent; /* When the menu is closed */
+  }
+  .nav.icon {
+    background-color: rgb(15, 15, 17); /* When the menu is open */
+    width: 100%; /*Set the width only when the menu is open */
+  }
+}

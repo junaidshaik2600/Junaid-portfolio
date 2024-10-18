@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  /* background-color: #f5f5f5; */
+  background-color: #a993ff;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  text-align: center;
+}
+.column {
+  width: 100%;
+  padding: 0.5em 0;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  /* color: #1f003b; */
+  color: rgb(255 255 255);
+}
+.card {
+  box-shadow: 0 0 2.2em rgba(25, 0, 58, 0.1);
+  padding: 3.5em 1em;
+  border-radius: 0.6em;
+  color: #1f003b;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+.card .img-container {
+  width: 8em;
+  height: 8em;
+  background-color: #a993ff;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+  /* border: 1px solid #a993ff; */
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card h3 {
+  font-weight: 500;
+}
+.card p {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0.5em 0 2em 0;
+  letter-spacing: 2px;
+}
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.card a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.4em;
+}
+.card:hover {
+  background: linear-gradient(#6045ea, #8567f7);
+  color: #ffffff;
+}
+.card:hover .img-container {
+  transform: scale(1.1);
+}
+/* Nav css here Copyed From index.css  */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 45px;
+  background-color: rgb(15, 15, 17); /* #0e1e5a; */
+  border-radius: 25px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 18px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: rgb(134, 134, 243);
+  font-size: 1.05rem;
+}
+.left {
+  color: white;
+  font-size: 1rem;
+  cursor: default;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 1em 7em;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em;
+  }
+  .card {
+    padding: 5em 1em;
+  }
+  .column {
+    flex: 0 0 33.33;
+    max-width: 33.33%;
+    padding: 0 1em;
+  }
+}
+@media screen and (max-width: 738px) {
+  /* Header 
+       And Nav Media Query Which Copyed From index.css
+      */
+  .right {
+    position: absolute;
+    top: 10px;
+    right: 10%;
+    z-index: 2; /* Ensure the menu icon is above other elements */
+  }
+  #menu {
+    width: 18px;
+    height: 30px;
+    margin: 10px 0 20px 115px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  #bar1 {
+    transform: translateY(-6px);
+  }
+  #bar2 {
+    transform: translateY(-4px);
+  }
+  #bar3 {
+    transform: translateY(-2px);
+  }
+  .right ul {
+    padding: 0;
+    display: block;
+    margin: -33px 0;
+  }
+  .right ul li {
+    margin: 15px; /* Add top and bottom margin to create spacing between list items */
+  }
+  .nav li {
+    padding: 0;
+    margin: 0 20px;
+    transition: 1s ease;
+    display: none;
+  }
+  .nav.icon li {
+    display: block;
+  }
+  .icon .bar {
+    background-color: #fff;
+  }
+  .icon #bar1 {
+    transform: translateY(4px) rotate(45deg);
+  }
+  .icon #bar2 {
+    opacity: 0;
+  }
+  .icon #bar3 {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 69.5px;
+    left: 83%;
+    transform: translateX(-50%);
+    background-color: #0e1e5a;
+    border-radius: 25px 0px 0px 25px;
+    padding: 10px;
+    z-index: 1;
+  }
+
+  /* Set background color based on menu state */
+  .nav:not(.icon) {
+    background-color: transparent; /* When the menu is closed */
+  }
+  .nav.icon {
+    background-color: rgb(15, 15, 17); /* When the menu is open */
+    width: 100%; /*Set the width only when the menu is open */
+  }
+}

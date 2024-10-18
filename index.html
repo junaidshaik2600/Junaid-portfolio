@@ -3,16 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Assets/css/nav.css">
-    <link rel="stylesheet" href="./Assets/css/index.css" />
-    <link rel="icon" href="./Assets/img/logo.gif" type="image/icon type" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:wght@700&family=Work+Sans:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="icon" href="img/logo.gif" type="image/icon type" />
     <title>Junaid - Portfolio</title>
   </head>
     <body>
         <header>
             <nav>
                 <div class="left">Junaid's Portfolio</div> 
-                <div class="right" id="right"></div>
+                <div class="right" id="right">
+                    <div id="menu" class="menu-button" onclick="onClickMenu()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                    <ul class="nav" id="nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="html/projects.html">Projects</a></li>
+                        <li><a href="html/team.html">Team</a></li>
+                        <li><a href="html/contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <main>
@@ -38,7 +55,50 @@
                 <hr class="work">
                 <div class="grid-container">
                     <div class="bg-grid" >
-                        <div class="grid" id="grid"></div>
+                        <!-- <button class="btn-scroll btn-scroll-left"id="left-btn">
+                            <i class="fa-solid fa-chevron-left" onclick="scrollhorizontally(1)"></i>
+                        </button> -->
+                        <div class="grid" id="grid">
+                            <div class="boxs">
+                                <img src="img/c.png" alt="c programming logo"class="img">
+                                <div class="title">C Developer<br/>(2021)</div>
+                                <div class="disc">
+                                    I Have Learn Basic Level Of Programming In Programming C
+                                </div>
+                            </div> 
+                            <div class="boxs">
+                                <img src="img/ds.png" alt="DS logo"class="img">
+                                <div class="title">Data Structures<br/>(2021-2022)</div>
+                                <div class="disc">
+                                    I have a deep-rooted understanding of fundamental Java programming concepts
+                                </div>
+                            </div>
+                            <div class="boxs">  
+                                <img src="img/java.png" alt="Java logo"class="img">
+                                <div class="title">Java Developer<br/>(2022-2023)</div>
+                                <div class="disc">
+                                    I have a deep-rooted understanding of fundamental Java programming concepts.
+                                </div>
+                            </div>
+                            <div class="boxs">  
+                                <img src="img/html.png" alt="HTML logo"class="img">
+                                <div class="title">HTML Developer<br/>(2022-Now)</div>
+                                <div class="disc">
+                                    I demonstrate a strong foundation in HTML and HTML5 while actively pursuing continuous learning
+                                </div>
+                            </div>
+                            <div class="boxs" id="last-box">
+                                <img src="img/css.png" alt="CSS logo"class="img">
+                                <div class="title">CSS Developer<br />(2022-Now)</div>
+                                <div class="disc">
+                                    I demonstrate a foundation in CSS and CSS3 while actively pursuing continuous learning
+                                </div>
+                            </div>
+                        </div>
+                        <!-- IF I WANT TO ADD MOVE BOXS CHECK IN .grid (NO.OF BOXS,1fr) -->
+                        <!-- <button class="btn-scroll btn-scroll-right" id="right-btn">
+                            <i class="fa-solid fa-chevron-right" onclick="scrollhorizontally(-1)"></i>
+                        </button> -->
                     </div>
                 </div>
             </section>
@@ -46,7 +106,7 @@
         <footer>
             <div class="footer">
                 <a href="#">
-                <img src="./Assets/img/logo.gif" alt="My logo"></a>
+                <img src="img/logo.gif" alt="My logo"></a>
                 <div class="footer-first">
                     <h3>Junaid's Developer Portfolio</h3>
                 </div>
@@ -79,16 +139,7 @@
               Copyright &#169; www.doimain-name.com | &#174; All rights reserved	
             </div> 
         </footer>
-        <script src="./Assets/js/nav.js"></script>
-        <script src="./Assets/js/index.js"></script>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script src="js/index.js"></script>
     </body>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-        <script>
-            // typed script
-            let typed = new Typed("#element", {
-                strings: ["Java Developer", " And ", "Web Developer"],
-                typeSpeed: 180,
-            });
-            console.log("working")
-        </script>
 </html>

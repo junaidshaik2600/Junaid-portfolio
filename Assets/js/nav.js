@@ -1,3 +1,4 @@
+const nav = document.querySelector(".right");
 const navHtml = `
     <div id="menu" class="menu-button" onclick="onClickMenu()">
         <div id="bar1" class="bar"></div>

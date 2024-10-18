@@ -6,11 +6,11 @@ const navHtml = `
     <div id="bar3" class="bar"></div>
     </div>
     <ul class="nav" id="nav">
-    <li><a href="/index.html">Home</a></li>
+    <li><a href="/junaid-portfolio/index.html">Home</a></li>
     <li><a href="#">About</a></li>
-    <li><a href="/pages/projects.html">Projects</a></li>
-    <li><a href="/pages/team.html">Team</a></li>
-    <li><a href="/pages/contact.html">Contact Me</a></li>
+    <li><a href="/junaid-portfolio/pages/projects.html">Projects</a></li>
+    <li><a href="/junaid-portfolio/pages/team.html">Team</a></li>
+    <li><a href="/junaid-portfolio/pages/contact.html">Contact Me</a></li>
     </ul>`;
 if (nav) {
   nav.innerHTML = navHtml;

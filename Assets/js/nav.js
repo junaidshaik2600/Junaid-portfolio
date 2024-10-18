@@ -11,7 +11,8 @@ const navHtml = `
         <li><a href="/junaid-portfolio/pages/projects.html">Projects</a></li>
         <li><a href="/junaid-portfolio/pages/team.html">Team</a></li>
         <li><a href="/junaid-portfolio/pages/contact.html">Contact Me</a></li>
-    </ul>`;
+    </ul>
+`;
 
 if (nav) {
   nav.innerHTML = navHtml;

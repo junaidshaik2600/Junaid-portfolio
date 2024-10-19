@@ -6,7 +6,7 @@ const file = "./data/projectsData.json";
 console.log(working )
 fetch(file)
   .then((res) => {
-    conssole.log(res);
+    console.log(res);
     return res.json();
   })
   .then((res) => {

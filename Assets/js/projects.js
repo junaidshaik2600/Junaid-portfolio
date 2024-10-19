@@ -3,6 +3,7 @@ const allProjects = document.querySelector(".allProjects");
 // console.log(grid);
 let response;
 const file = "./data/projectsData.json";
+console.log(working )
 fetch(file)
   .then((res) => {
     conssole.log(res);

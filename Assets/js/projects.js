@@ -5,6 +5,7 @@ let response;
 const file = "./data//projectsData.json";
 fetch(file)
   .then((res) => {
+    conssole.log(res);
     return res.json();
   })
   .then((res) => {
@@ -16,6 +17,7 @@ function handler(value) {
   let data = value;
 
   for (const dataValue of data) {
+    console.log("Working For project");
     let thisValue = `
         <div class="project">
             <img src="${dataValue.imgSrc}" alt="" class="imgLogo" />

@@ -1,5 +1,5 @@
 ___
-# Portfolio Website - Shaik Mohammad Junaid.
+# Portfolio Website - Shaik Mohammad Junaid
 
 ## Overview
 Welcome to my personal portfolio website! As a passionate fresher in web development, this website serves as a platform to showcase my skills, projects, and achievements. I have created a clean and responsive design to present my work in a professional manner, highlighting my journey as I grow and develop in the world of software development.
